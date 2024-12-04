@@ -36,7 +36,7 @@ object Day02 {
     private fun List<Int>.isSafeWithSingleBadLevel(): Boolean {
         if (isSafe()) return true
         return this.indices.any { removedIndex ->
-            val sublist = this.slice(this.indices - removedIndex)
+            val sublist = this.filterIndexed { index, _ -> removedIndex != index }
             sublist.isSafe()
         }
     }

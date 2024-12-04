@@ -1,9 +1,9 @@
-fun main() = Day00.main()
+fun main() = Day05.main()
 
-object Day00 {
+object Day05 {
     fun main() {
-        val testInput = readInput("Day00_test")
-        val input = readInput("Day00")
+        val testInput = readInput("Day05_test")
+        val input = readInput("Day05")
 
         part1(testInput).also { println("Part 1, test input: $it"); check(it == 1) }
         part1(input).also { println("Part 1, real input: $it"); /* check(it == 2) */ }
